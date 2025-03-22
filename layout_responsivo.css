@@ -1,0 +1,162 @@
+main{
+    background-color: rgb(248, 255, 144);
+    width: 90%;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: greenyellow;
+}
+
+#caixa_container1{
+     position: relative;
+     width: 100%;
+     height: 320px;
+     background-color: rgb(192, 10, 64);
+     margin-top: 10px;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-evenly;   
+}
+
+.quadrado{
+    position: relative;
+    width: 42%;
+    height: 240px;
+    background-color: rgb(255, 159, 175);
+    float: left;
+    top: -12px;
+    padding-top: 12px;
+    padding-left: 2%;
+}
+
+#caixa_container2{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: cornflowerblue;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+     text-align: center;
+     
+}
+
+.branco{
+    position: relative;
+    width: 180px;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#laranja{
+    position: relative;
+    width: 98%;
+    height: 320px;
+    background-color: rgb(255, 86, 25);
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-left: 2%;
+}
+
+#aqua{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: rgb(255, 225, 56);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.azul{
+    position: relative;
+    width:40%;
+    height: 270px;
+    background-color: rgb(17, 54, 122);
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 1%;
+}
+
+.verde{
+    position: relative;
+    width: 40%;
+    height: 270px;
+    background-color: rgb(107, 255, 94);
+    top: -10px;  
+    padding-top: 10px;
+    padding-left: 1%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: indigo;
+    margin-top: 10px;
+}
+
+/*--------------------- Visualização Mobile ---------------------*/
+
+@media only screen and (max-width:480px){
+
+main{
+    width: 100%;
+}
+
+#caixa_container1{
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+}
+
+#caixa_container1 .quadrado{
+    width: 90%;
+    height: 250px;
+}
+
+#caixa_container2{
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#caixa_container2 .branco{
+    height: 190px;
+}
+
+#aqua{
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+}
+
+#aqua .azul{
+    width: 90%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+#aqua .verde{
+    width: 90%;
+    height: 260px;
+    margin-top: 10px;
+}
+
+footer{
+    color: white;
+}
+}
