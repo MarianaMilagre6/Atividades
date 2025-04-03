@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <h1>Depósito com taxa</h1>
+    <script>
+        let deposito = Number(prompt("Digite o valor do depósito: "))
+        let taxa = Number(prompt("Me diga a taxa mensal(em %): ")) /100
+        let total = deposito * (((1 + taxa) ** 12 - 1) / taxa ) * (1 + taxa)
+        document.write(`O valor do montante depois dos 12 meses é: ${total.toFixed(2)}`)
+    </script>
+</body>
+</html>
