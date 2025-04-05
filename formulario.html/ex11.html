@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo</title>
+</head>
+
+<body>
+    <script>
+        function ex10() {
+            let contadorEntre = 0, contadorFora = 0;
+
+            for (let i = 0; i < 10; i++) {
+                let n1 = parseInt(prompt("Informe um valor:"));
+
+                if (n1 >= 24 && n1 <= 42) {
+                    contadorEntre++;
+                } else {
+                    contadorFora++;
+                }
+            }
+
+            alert(`Total de valores entre: ${contadorEntre}`);
+            alert(`Total de valores fora: ${contadorFora}`);
+        }
+    </script>
+</body>
+
+</html>
